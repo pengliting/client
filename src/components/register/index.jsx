@@ -1,46 +1,23 @@
-
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {NavBar, WingBlank, WhiteSpace, List, InputItem, Radio, Button } from 'antd-mobile';
-
 import Logo from '../logo';
 
 const Item = List.Item;
 
-class Register extends Component {
+class Register  extends Component {
+
+    static propTypes  = {
+        user:PropTypes.object.isRequired,
+        register:PropTypes.func.isRequired
+    };
+
     state = {
-        // isBossChecked: true,
         laoban: true,
         username: '',
         password: '',
         rePassword: ''
-    }
-
-    /* handleRadio = type => {
-     //得到单选按钮的类型，是老板还是大神
-     if (type === 'laoban') {
-     this.setState({
-     isBossChecked: true
-     })
-     } else {
-     this.setState({
-     isBossChecked: false
-     })
-     }
-     }*/
-
-    /*handleUsername = value => {
-     //更新状态
-     this.setState({
-     username: value
-     })
-     }
-
-     handlePassword = value => {
-     //更新状态
-     this.setState({
-     password: value
-     })
-     }*/
+    };
 
     handleChange = (type, value) => {
         //更新状态

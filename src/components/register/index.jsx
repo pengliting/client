@@ -21,33 +21,6 @@ class Register extends Component {
         rePassword: ''
     }
 
-    /* handleRadio = type => {
-     //得到单选按钮的类型，是老板还是大神
-     if (type === 'laoban') {
-     this.setState({
-     isBossChecked: true
-     })
-     } else {
-     this.setState({
-     isBossChecked: false
-     })
-     }
-     }*/
-
-    /*handleUsername = value => {
-     //更新状态
-     this.setState({
-     username: value
-     })
-     }
-
-     handlePassword = value => {
-     //更新状态
-     this.setState({
-     password: value
-     })
-     }*/
-
     handleChange = (type, value) => {
         //更新状态
         this.setState({

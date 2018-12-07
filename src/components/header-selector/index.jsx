@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 class HeaderSelector extends Component {
     static propTypes = {
         setHeader: PropTypes.func.isRequired
-    }
+    };
 
     state = {
         header: null
-    }
+    };
 
     setHeader = (el, index) => {
         // console.log(el);
@@ -17,10 +17,10 @@ class HeaderSelector extends Component {
         //更新自身状态
         this.setState({
             header: el.icon
-        })
+        });
         //更新父组件状态
         this.props.setHeader(index);
-    }
+    };
 
     render () {
         const {header} = this.state;
